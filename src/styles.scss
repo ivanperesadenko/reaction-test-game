@@ -14,7 +14,10 @@ html {
   @include mat.button-theme($my-theme);
 }
 
-
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 
 
