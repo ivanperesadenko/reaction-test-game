@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  background-image: linear-gradient(to right, #f32170,
+    #ff6b08, #7d00fa, #eedd44);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  h1, mat-icon {
+    font-size: 48px;
+    line-height: 62px;
+  }
+}
