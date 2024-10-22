@@ -1,27 +1,50 @@
-# ReactionTestGame
+# Project Setup Instructions
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
+## Prerequisites
 
-## Development server
+Before starting, ensure you have the following installed:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **nvm** (Node Version Manager) to manage Node.js versions
+- **Node.js v20.16.0**
+- **@angular/cli v18.2.9**
 
-## Code scaffolding
+Follow the steps below to set up and run the project:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Step-by-step Setup Guide
 
-## Build
+### 1. Install `nvm` and Node.js
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+If you don't have `nvm` installed, you can install it by following the [nvm installation guide](https://github.com/nvm-sh/nvm#installing-and-updating).
 
-## Running unit tests
+Once `nvm` is installed, run the following commands to install and use Node.js v20.16.0:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+  nvm install 20.16.0
+  nvm use 20.16.0
+```
 
-## Running end-to-end tests
+### 2. Install Angular CLI
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Install the specific version of Angular CLI globally using the command:
+```bash
+  npm install -g @angular/cli@18.2.9
+```
 
-## Further help
+### 3. Install Project Dependencies
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Navigate to the project folder and run the following command to install all necessary dependencies:
+
+```bash
+  npm install
+```
+
+### 4. Start the Development Server
+
+After all dependencies are installed, you can start the development server with:
+
+```bash
+  npm start
+```
+
+## Enjoy ❤️
+
