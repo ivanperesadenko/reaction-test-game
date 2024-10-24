@@ -1,0 +1,22 @@
+<ng-container [formGroup]="configurationForm">
+  <mat-form-field class="input-control">
+    <mat-label>Reaction time</mat-label>
+
+    <input matInput [type]="'number'" [formControlName]="'reactionTime'" [placeholder]="'Enter a reaction time'">
+
+    @if(configurationForm.get('reactionTime')?.hasError('min')) {
+      <mat-error>Reaction time must be greater than 100ms</mat-error>
+    }
+    @if(configurationForm.get('reactionTime')?.hasError('required')) {
+      <mat-error>Reaction time is required</mat-error>
+    }
+  </mat-form-field>
+
+  <button
+    class="start-game-btn"
+    mat-flat-button
+    [disabled]="isGameActive()"
+    (click)="submitForm()">
+    Start Game
+  </button>
+</ng-container>

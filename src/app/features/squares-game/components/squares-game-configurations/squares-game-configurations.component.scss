@@ -1,0 +1,15 @@
+:host {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 5px;
+
+  .input-control {
+    flex-basis: calc(70% - 10px);
+  }
+
+  .start-game-btn {
+    height: 56px;
+    flex-basis: calc(30% - 10px);
+    border-radius: 6px;
+  }
+}
