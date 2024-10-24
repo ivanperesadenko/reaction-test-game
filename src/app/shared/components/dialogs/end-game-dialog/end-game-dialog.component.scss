@@ -1,0 +1,31 @@
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  &.success {
+    background-image: linear-gradient(to right, #28f321,
+      #45ce1f, #e5bd1d, #eedd44);
+  }
+  &.failure {
+    background-image: linear-gradient(to right, #f32121,
+      #ff0000, #ff8800, #de1414);
+  }
+
+  mat-icon {
+    font-size: 40px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+mat-dialog-content {
+  font-size: 16px !important;
+  margin-bottom: 10px;
+}

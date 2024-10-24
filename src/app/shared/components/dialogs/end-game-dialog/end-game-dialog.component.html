@@ -1,0 +1,16 @@
+<div class="dialog-container">
+  <h2 mat-dialog-title [class.success]="data.isWin" [class.failure]="!data.isWin">
+    <mat-icon>{{ icon }}</mat-icon> {{ dialogTitle }}
+  </h2>
+
+  <app-score></app-score>
+
+  <mat-dialog-content>
+    {{ dialogContentMessage }}
+  </mat-dialog-content>
+
+  <mat-dialog-actions [align]="'center'">
+    <button mat-stroked-button [mat-dialog-close]="false">Close</button>
+    <button mat-flat-button [mat-dialog-close]="true">Try Again</button>
+  </mat-dialog-actions>
+</div>
