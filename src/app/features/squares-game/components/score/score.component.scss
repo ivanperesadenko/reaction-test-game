@@ -1,0 +1,13 @@
+.score-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+
+  .score {
+    color: #79529f;
+    .label, .value {
+      font-size: 20px;
+    }
+  }
+}
