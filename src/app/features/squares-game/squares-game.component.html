@@ -1,1 +1,9 @@
-<p>squares-game works!</p>
+<app-score></app-score>
+
+<app-squares-game-configurations
+  (startGame)="startGame($event)">
+</app-squares-game-configurations>
+
+<app-squares-list
+  [squares]="squares()">
+</app-squares-list>
