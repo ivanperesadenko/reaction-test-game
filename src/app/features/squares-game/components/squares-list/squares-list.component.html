@@ -1,0 +1,7 @@
+<div class="square-game-container" #squaresContainer>
+  @for (square of squares(); let index = $index; track index) {
+    <app-square
+      [appBgColor]="(square.color$! | async) ?? square.color">
+    </app-square>
+  }
+</div>
