@@ -10,7 +10,8 @@ module.exports = tseslint.config(
     files: ["**/*.ts"],
     languageOptions: {
       globals: {
-        ...globals.browser
+        ...globals.browser,
+        ...globals.jest
       }
     },
     extends: [
