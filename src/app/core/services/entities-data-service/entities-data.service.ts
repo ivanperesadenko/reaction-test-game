@@ -2,7 +2,7 @@ import { signal, WritableSignal } from '@angular/core';
 import {
   ConstructorWithArgs,
   EntityFactoryService,
-} from '@core/services/entity-factory.service';
+} from '../entity-factory.service';
 
 export class EntitiesDataService<TClassType, TClassArgs extends unknown[]> {
   private _entities: WritableSignal<TClassType[]> = signal([]);

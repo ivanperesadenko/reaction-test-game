@@ -29,7 +29,7 @@
       "@features/*": ["app/features/*"],
       "@models/*": ["app/models/*"],
       "@shared/*": ["app/shared/*"],
-      "@utils/*": ["app/utils/*"],
+      "@utils/*": ["app/utils/*"]
     }
   },
   "angularCompilerOptions": {
@@ -37,5 +37,8 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+  "include": [
+    "src/testing/jest-custom-matchers.d.ts"
+  ]
 }

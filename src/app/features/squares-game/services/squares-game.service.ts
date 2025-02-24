@@ -14,13 +14,13 @@ import {
   tap,
   timer,
 } from 'rxjs';
-import { DialogService } from '@core/services/dialog.service';
+import { DialogService } from '../../../core/services/dialog-service/dialog.service';
 import { CustomColorfulSquare } from '@features/squares-game/models/square';
 import { SquaresDataService } from '@features/squares-game/services/squares-data.service';
 import { ScoreService } from '@features/squares-game/services/score.service';
 import { EndGameDialogComponent } from '@shared/components/dialogs/end-game-dialog/end-game-dialog.component';
 import { EndGameModalData } from '@shared/components/dialogs/end-game-dialog/types/end-game-modal-data.type';
-import { getRandomNumber } from '@utils/get-random-number';
+import { getRandomNumber } from '@utils/get-random-number/get-random-number';
 
 @Injectable()
 export class SquaresGameService {

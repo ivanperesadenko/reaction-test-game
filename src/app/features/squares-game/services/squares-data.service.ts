@@ -1,6 +1,6 @@
 import { WritableSignal } from '@angular/core';
 
-import { EntitiesDataService } from '@core/services/entities-data.service';
+import { EntitiesDataService } from '../../../core/services/entities-data-service/entities-data.service';
 import { SQUARE_COLORS_PALETTE } from '@features/squares-game/constants/square-colors';
 import {
   CustomColorfulSquare,
